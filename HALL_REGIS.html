@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hall Registration</title>
+</head>
+<body style="font-family: 'Segoe ui',  Tahoma, Geneva, Verdana, sans-serif">
+   <h3>Welcome To UG Hall Registration Portal</h3>
+   <div>
+       <form action="/student-details" method="GET">
+        <table id='student details'>
+           <tr id='name'>
+               <td>Name:</td>
+               <td></td>
+           </tr>
+           <tr id='studentid'>
+               <td>Student ID:</td>
+               <td></td>
+           </tr>
+           <tr>
+               <td>Level:</td>
+               <td></td>
+           </tr>
+           <tr>
+               <td>Gender:</td>
+               <td></td>
+           </tr>
+       </table>
+    </form>
+   </div>
+     <div class="container">
+           <!--Hall selection Form -->
+               <form action="/hallRegistration" method="POST">
+                   <h4>Hall Selection</h4>
+                        <select name="hall">
+                                <option>---Main Halls---</option>
+                                <option>Akuafo Hall</option>
+                                <option>Commonwealth Hall</option>
+                                <option>Legon Hall</option>
+                                <option>Mensah Sarbah Hall</option>
+                                <option>Volta Hall</option>
+                                <option>---Diaspora---</option>
+                                <option>Alexander Adum Kwapong Hall </option>
+                                <option>Dr Hilla Liman Hall</option>
+                                <option>Elizabeth Frances Sey Hall</option>
+                                <option>Jean Nelson Aka Hall</option>
+                        </select>
+                   <h4>Select Block</h4>
+                        <select name="block">
+                               <option>-- Select Block --</option>
+                               <option value="block-A">Block A</option>
+                               <option value="block-B">Block B</option>
+                               <option value="block-C">Block C</option>
+                               <option value="block-D">Block D</option>
+                        </select>
+                        <br/><br/>
+                    <button type="submit">Submit</button>
+                    <input type="reset" value="Start over"></p>
+               </form>
+            </div>
+    </body>
+</html>
